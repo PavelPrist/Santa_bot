@@ -11,7 +11,7 @@ def validate_full_name(message):
 
 def validate_telephone(message):
     return re.fullmatch(
-        r"(\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4}|\(\d{3}\)\s*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4})",
+        r"\+?\d[\d-]+",
         message
     )
 
